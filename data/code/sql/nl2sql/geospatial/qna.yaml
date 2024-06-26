@@ -1,0 +1,12 @@
+created_by: watsonxchallengeteam
+task_description: Natural Language to SQL data generation task for a Postgres database of geospatial data
+data_builder: nl2sql
+database_type: postgres
+ddl_schema:
+  "CREATE TABLE geospatial (\n    metadata TBD,\n    data TBD,\n);"
+ground_truth:
+  - query: SELECT * FROM geospatial
+    utterance: Get me all the data
+query_logs:
+  - SELECT * FROM geospatial LIMIT 20
+  - SELECT metadata FROM geospatia
